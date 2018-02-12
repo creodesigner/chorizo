@@ -1,0 +1,14 @@
+@import 'reset.styl';
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+  font-family: "fira-sans", sans-serif;
+}
+h1 {
+  font-family: "tablet-gothic", sans-serif;
+}

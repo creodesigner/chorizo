@@ -1,0 +1,84 @@
+#header {
+  grid-area: header;
+}
+#header.menu-open a,
+#header.menu-open h2 {
+  color: #fff;
+}
+#header.menu-open .bars:hover {
+  transform: rotate(45deg);
+}
+#header.menu-open .bars .bar {
+  background: #fff !important;
+}
+#header,
+#header .header-fixed {
+  height: 5rem;
+}
+#header .header-fixed {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
+}
+@media screen and (min-width: 768px) {
+  #header .header-fixed {
+    position: fixed;
+    width: 100%;
+  }
+}
+#header a {
+  color: #b5d5c7;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+#header h1 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+#header h2 {
+  color: #999;
+  font-size: 1.5rem;
+  font-weight: 200;
+}
+#header .nav-wrapper {
+  align-items: center;
+  display: inline-flex;
+}
+#header .nav-wrapper h2 {
+  margin-bottom: 0;
+  margin-right: 1rem;
+  text-transform: capitalize;
+}
+@media screen and (min-width: 768px) {
+  #header .nav-wrapper h2 {
+    margin-right: 2rem;
+  }
+}
+#header .bars {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 2.5rem;
+  justify-content: space-around;
+  padding: 0.25rem 0;
+  transition: all 0.25s;
+  width: 2rem;
+}
+#header .bars:hover .bar {
+  background: #b5d5c7;
+}
+#header .bars:hover .bar.top {
+  transform: rotate(90deg) translateX(35%);
+}
+#header .bars:hover .bar.bottom {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+#header .bars .bar {
+  background: #999;
+  height: 0.125rem;
+  transition: all 0.3s;
+}

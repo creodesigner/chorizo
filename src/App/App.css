@@ -1,0 +1,29 @@
+.app {
+  display: grid;
+  grid-template-areas: "header" "main";
+  grid-template-columns: auto;
+  grid-template-rows: 5rem auto;
+}
+.app #header .header-fixed,
+.app #main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .app #header .header-fixed,
+  .app #main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .app #header .header-fixed,
+  .app #main {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+.app #main {
+  grid-area: main;
+  padding-top: 1rem;
+}

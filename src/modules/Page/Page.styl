@@ -1,0 +1,19 @@
+@import "../../stylus/vars"
+
+#Page
+  position relative
+
+  .wio-link
+    opacity .5
+    position absolute
+    right 0
+    top 0
+    transition opacity .125s
+
+    &:hover
+      opacity 1
+
+  .content
+    color $gray
+    margin 0 auto 2rem
+    max-width 768px

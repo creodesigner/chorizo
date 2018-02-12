@@ -1,0 +1,19 @@
+@import '../../stylus/vars'
+
+.loading-wrapper
+  align-items center
+  display flex
+  justify-content center
+  min-height 20rem
+
+.loading
+  width 8rem
+  height 8rem
+  border .25rem solid rgba($light-gray,.6)
+  border-radius 50%
+  border-top-color $mint
+  animation spin 1s ease-in-out infinite
+
+@keyframes spin
+  to
+    transform rotate(360deg)
