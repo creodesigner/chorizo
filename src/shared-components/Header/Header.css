@@ -1,5 +1,12 @@
 #header {
+  align-items: center;
+  background: rgba(102,217,255,0.1);
+  display: flex;
   grid-area: header;
+  height: 4rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1000;
 }
 #header.menu-open a,
 #header.menu-open h2 {
@@ -11,37 +18,12 @@
 #header.menu-open .bars .bar {
   background: #fff !important;
 }
-#header,
-#header .header-fixed {
-  height: 5rem;
-}
-#header .header-fixed {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  z-index: 1000;
-}
-@media screen and (min-width: 768px) {
-  #header .header-fixed {
-    position: fixed;
-    width: 100%;
-  }
-}
-#header a {
-  color: #b5d5c7;
-  font-size: 1.2rem;
-  font-weight: 700;
-  text-decoration: none;
-}
-#header h1 {
+#header .logo {
+  color: #66d914;
+  font-family: "museo-slab", sans-serif;
   font-size: 2rem;
   font-weight: 200;
-}
-#header h2 {
-  color: #999;
-  font-size: 1.5rem;
-  font-weight: 200;
+  text-decoration: none;
 }
 #header .nav-wrapper {
   align-items: center;
@@ -61,11 +43,11 @@
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  height: 2.5rem;
+  height: 2rem;
   justify-content: space-around;
   padding: 0.25rem 0;
   transition: all 0.25s;
-  width: 2rem;
+  width: 1.5rem;
 }
 #header .bars:hover .bar {
   background: #b5d5c7;
@@ -78,7 +60,7 @@
   transform: rotate(90deg);
 }
 #header .bars .bar {
-  background: #999;
+  background: #888;
   height: 0.125rem;
   transition: all 0.3s;
 }

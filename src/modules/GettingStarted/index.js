@@ -2,10 +2,10 @@ import React from 'react';
 import NotFound from '../../templates/NotFound';
 import Loading from '../../shared-components/Loading';
 
-import './Page.css';
+import './GettingStarted.css';
 
 // Declare your component
-export default class Page extends React.Component {
+export default class GettingStarted extends React.Component {
 
   state = {
     notFound: false,
@@ -33,13 +33,18 @@ export default class Page extends React.Component {
   //   return null;
   // }
 
+  handleStartClick() {
+    alert('Alright!');
+  }
+
   render() {
     // console.log(this.state.page);
 
     if (this.state.page) {
       return (
-        <div id="Page">
+        <div id="GettingStarted">
           <h1>Welcome to this wonderful app.</h1>
+          <button className="button big" onClick={this.handleStartClick}>Let's get started!</button>
         </div>
       );
     } else if (this.state.notFound) {

@@ -124,20 +124,18 @@ table {
 * {
   box-sizing: border-box;
 }
+html,
+body,
+#root {
+  height: 100%;
+}
 html {
   font-size: 16px;
-  height: 100%;
-  position: relative;
 }
 body {
   -webkit-font-smoothing: antialiased;
-  background: #f5f6f6;
-  font-family: "tablet-gothic", sans-serif;
-}
-body.menu-open {
-  height: 100%;
-  overflow: hidden;
-  position: relative;
+  color: #888;
+  font-family: "museo-sans-rounded", sans-serif;
 }
 h1 {
   font-size: 2rem;
@@ -165,4 +163,23 @@ ul li {
   font-size: 0.9rem;
   list-style: disc;
   margin-bottom: 0.5rem;
+}
+.button {
+  appearance: none;
+  background: #66d914;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+.button.big {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+.button:hover {
+  background: #5cc312;
+}
+.button:active {
+  transform: translateY(2px);
 }

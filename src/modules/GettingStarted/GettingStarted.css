@@ -1,0 +1,15 @@
+#GettingStarted {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+#GettingStarted .content {
+  color: #888;
+  margin: 0 auto 2rem;
+  max-width: 768px;
+}
+#GettingStarted h1 {
+  margin-bottom: 4rem;
+}

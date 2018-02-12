@@ -9,7 +9,7 @@ import AppStore from './flux/AppStore';
 
 import Header from '../shared-components/Header/';
 import Menu from '../shared-components/Menu/';
-import Page from '../modules/Page';
+import GettingStarted from '../modules/GettingStarted';
 import NotFound from '../templates/NotFound';
 import './App.css';
 
@@ -56,7 +56,7 @@ export default class App extends React.Component {
           <Header className={menuClass}/>
           <main id="main">
             <Switch>
-              <Route exact path="/" render={routeProps => <Page {...routeProps}/>}/>
+              <Route exact path="/" render={routeProps => <GettingStarted {...routeProps}/>}/>
               <Route component={NotFound}/>
             </Switch>
           </main>
